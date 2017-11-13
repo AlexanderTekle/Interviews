@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/trapping-rain-water/description/
+//o(n^2) and o(1)
 public class TrappingWater {
 	
 	public int solution(int[] bars)
