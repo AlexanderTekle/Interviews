@@ -1,12 +1,12 @@
 //https://leetcode.com/problems/linked-list-cycle/description/
 import java.util.*;
 
-class ListNode
+class ListNode2
 {
 	int val;
-	ListNode next;
+	ListNode2 next;
 	
-	public ListNode(int val)
+	public ListNode2(int val)
 	{
 		this.val = val;
 		next = null;
@@ -14,8 +14,8 @@ class ListNode
 }
 public class LinkedListCycle {
 	//o(n) runtime o(n) space
-    public boolean hasCycle(ListNode head) {
-        Set<ListNode> nodes = new HashSet<>();
+    public boolean hasCycle(ListNode2 head) {
+        Set<ListNode2> nodes = new HashSet<>();
         
         while(head != null)
         {
@@ -28,10 +28,10 @@ public class LinkedListCycle {
     }
     //better solution
     //o(n) time and o(1) space
-    public boolean hasCycle2(ListNode head)
+    public boolean hasCycle2(ListNode2 head)
     {
-    		ListNode slow = head;
-    		ListNode fast = head.next;
+    		ListNode2 slow = head;
+    		ListNode2 fast = head.next;
     		
     		while (slow != fast)
     		{
